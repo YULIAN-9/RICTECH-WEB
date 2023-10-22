@@ -1,0 +1,154 @@
+/* Estilo universal para quitar estilos que ya vienen de los navegadores */
+* {
+  /* para que el paddign y el boirde no se agrande */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --color-header: #81ca97;
+  --color-main: #81ca97;
+  --color-footer: #81ca97;
+  --color-submenu: rgb(122, 151, 114);
+  --color-menu-lateral: #adcab9;
+  --color-header-texto: #000000;
+  --color-footer-texto: #000000;
+  --color-menu-texto: #6fd477;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--color-main);
+    border-radius: 20px;
+}
+
+header {
+    background-color: var(--color-header);
+    color: var(--color-header-texto);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+}
+
+/* Estilos para la sección principal */
+.seccion1 {
+    display: flex;
+    margin: 40px;
+}
+
+.seccion2 {
+    display: flex;
+    margin: 40px;
+}
+
+.seccion2 img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.seccion3 {
+  display: flex;
+  margin: 40px;
+}
+
+.seccion3 img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.seccion4 {
+  display: flex;
+  margin: 40px;
+}
+
+.seccion4 img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.seccion5 {
+  display: flex;
+  margin: 40px;
+}
+
+.seccion5 img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* Estilos para el menú lateral */
+aside {
+    background-color: var(--color-menu-lateral);
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    margin-right: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-footer-texto);
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/*Estilos submenú*/
+nav ul {
+    list-style-type: none; /*para que no se muestren los puntos de la lista*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; /*para que los elementos del menú se muestren en línea*/
+  }
+  
+  nav ul li a {
+    display: block; /*para que los elementos del menú se muestren en forma de bloque*/
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  nav ul li ul {
+    display: none;  /*ocultar submenú*/
+    position: absolute; /*para que el submenú no se desplace*/
+    background-color: var(--color-submenu);
+    border: 1px solid #333;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit; /*mostrar submenú*/
+  }
+  
+  nav ul li ul li {
+    width: 200px;
+    float: none;
+    display: list-item; /*para que los elementos del submenú se muestren en forma de lista*/
+    position: relative; /*para que el submenú no se desplace*/
+  }
+  
+  nav ul li ul li a {
+    padding: 8px 16px;
+    color: #000;
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #adcab9;
+  }
+  
+
